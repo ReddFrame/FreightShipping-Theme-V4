@@ -1,0 +1,283 @@
+// Google Font Import
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;400;500;600;700;800&display=swap');
+
+/**************************
+Variables
+**************************/
+
+// Fonts
+$primary-font: 'Sarabun',
+sans-serif;
+$secondary-font: Arial,
+sans-serif;
+
+// Colors 
+$primary-color: rgb(255, 107, 11);
+$alt-color-1: rgb(72, 155, 232);
+$alt-color-2: rgb(0, 185, 235);
+$alt-color-3: rgb(80, 202, 242);
+$alt-color-4: rgb(255, 255, 255);
+$alt-color-5: rgb(245, 247, 246);
+$alt-color-6: rgb(248, 248, 248);
+$alt-color-7: rgb(52, 58, 64);
+$alt-color-8: rgb(39, 49, 55);
+$opacity-1: rgba(255, 255, 255, 0.39);
+$opacity-2: rgba(0, 0, 0, 0.5);
+$shadow-1: 5px 2px 5px rgba(0, 0, 0, 0.1);
+$rgba-1: rgba(52, 58, 64, 0.75);
+
+/**************************
+Global Reset
+**************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+// Gets rid of the whitespace to right
+html,
+body {
+    overflow-x: hidden;
+}
+
+/**************************
+Navigation Brand/Logo
+**************************/
+
+.navbar-brand img {
+    width: 200px;
+    height: auto;
+}
+
+/**************************
+Hero/Banner - Buttons
+**************************/
+
+.hero-button1 {
+    background-color: #ff6b0b;
+    border-radius: 0;
+    border: none;
+}
+
+.hero-button1:hover {
+    background-color: #ff6b0b;
+    ;
+}
+
+.hero-button2 {
+    background-color: #489be8;
+    border-radius: 0;
+    border: none;
+}
+
+.hero-button2:hover {
+    background-color: #489be8;
+}
+
+/**************************
+Shipping Solutions - Content
+**************************/
+
+.intro h2 {
+    font-family: $secondary-font, sans-serif;
+    font-size: 39px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: #343a40;
+    margin-top: 100px;
+    line-height: 60px; 
+}
+
+.intro p {
+    font-family: $primary-font, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+/**************************
+Shipping Solutions - Features
+**************************/
+
+.item h3 {
+    font-family: $secondary-font, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 17px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.item p {
+    font-family: $primary-font, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: left;
+}
+
+/**************************
+One Step Logistics Services - Content
+**************************/
+
+.intro2 h2 {
+    margin-top: -10px;
+}
+
+/**************************
+Footer
+**************************/
+
+#footer {
+    background-color: $alt-color-8;
+    color: $alt-color-4;
+    padding-bottom: 40px;
+}
+
+/* Footer Logo */
+.logo-footer {
+    width: 50%;
+    height: auto;
+}
+
+/* Footer Contact Icons */
+.icon-img {
+    width: 5%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 80px;
+}
+
+.icon-txt {
+    color: $alt-color-4;
+    display: block;
+    text-align: left;
+    position: relative;
+    top: 8px;
+    left: 110px;
+    margin-bottom: -5px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    width: 50%;
+}
+
+/* Footer -- Shipping Resources */
+#footer-links h5 {
+    color: $opacity-1;
+}
+
+#shipping-resource-list li {
+    text-align: left;
+}
+
+#shipping-resource-list li a {
+    text-decoration: none;
+    color: $alt-color-4;
+    position: relative;
+    left: 82px;
+    top: 10px;
+}
+
+#shipping-resource-list-fc li {
+    text-align: left;
+}
+
+#shipping-resource-list-fc li a {
+    text-decoration: none;
+    color: $alt-color-4;
+    position: relative;
+    left: 108px;
+    top: 10px;
+}
+
+#shipping-resource-list-follow li {
+    text-align: left;
+}
+
+#shipping-resource-list-follow li a {
+    text-decoration: none;
+    color: $alt-color-4;
+    position: relative;
+    left: 125px;
+    top: 10px;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    position: relative;
+    top: 20px;
+    left: 100px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: $opacity-2;
+}
+
+/* Footer DBA logos */
+.dba-logos {
+    position: relative;
+    top: 20px;
+    left: 400px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.dba-logos img {
+    width: 8%;
+    height: auto;
+    padding-left: 20px;
+    margin-top: -20px;
+}
+
+/**************************
+Media Queries & Breakpoints
+**************************/
+
+// Small devices (landscape phones, 425px and up)
+@media (max-width: 425px) {
+
+    // Hides banner/hero image in mobile resolution
+    .hideOnMobile {
+        display: none !important;
+    }
+
+    // Aligns CTA txt to middle in mobile resolution
+    .cta {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    // Gives padding top to section in mobile resolution
+    .top {
+        padding-top: 40px;
+    }
+
+    // Gives padding bottom to section in mobile resolution
+    .bottom {
+        padding-bottom: 40px;
+    }
+
+    // Centers txt to middle of section in mobile resolution
+    .name,
+    .description {
+        text-align: center;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}

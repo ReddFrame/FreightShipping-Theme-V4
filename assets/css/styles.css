@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;400;500;600;700;800&display=swap");
+/**************************
+Variables
+**************************/
+/**************************
+Global Reset
+**************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Sarabun", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/**************************
+Navigation Brand/Logo
+**************************/
+.navbar-brand img {
+  width: 200px;
+  height: auto;
+}
+
+/**************************
+Hero/Banner - Buttons
+**************************/
+.hero-button1 {
+  background-color: #ff6b0b;
+  border-radius: 0;
+  border: none;
+}
+
+.hero-button1:hover {
+  background-color: #ff6b0b;
+}
+
+.hero-button2 {
+  background-color: #489be8;
+  border-radius: 0;
+  border: none;
+}
+
+.hero-button2:hover {
+  background-color: #489be8;
+}
+
+/**************************
+Shipping Solutions - Content
+**************************/
+.intro h2 {
+  font-family: Arial, sans-serif, sans-serif;
+  font-size: 39px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #343a40;
+  margin-top: 100px;
+  line-height: 60px;
+}
+
+.intro p {
+  font-family: "Sarabun", sans-serif, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+/**************************
+Shipping Solutions - Features
+**************************/
+.item h3 {
+  font-family: Arial, sans-serif, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 17px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.item p {
+  font-family: "Sarabun", sans-serif, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: left;
+}
+
+/**************************
+One Step Logistics Services - Content
+**************************/
+.intro2 h2 {
+  margin-top: -10px;
+}
+
+/**************************
+Footer
+**************************/
+#footer {
+  background-color: #273137;
+  color: white;
+  padding-bottom: 40px;
+}
+
+/* Footer Logo */
+.logo-footer {
+  width: 50%;
+  height: auto;
+}
+
+/* Footer Contact Icons */
+.icon-img {
+  width: 5%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 80px;
+}
+
+.icon-txt {
+  color: white;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: 8px;
+  left: 110px;
+  margin-bottom: -5px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  width: 50%;
+}
+
+/* Footer -- Shipping Resources */
+#footer-links h5 {
+  color: rgba(255, 255, 255, 0.39);
+}
+
+#shipping-resource-list li {
+  text-align: left;
+}
+
+#shipping-resource-list li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 82px;
+  top: 10px;
+}
+
+#shipping-resource-list-fc li {
+  text-align: left;
+}
+
+#shipping-resource-list-fc li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 108px;
+  top: 10px;
+}
+
+#shipping-resource-list-follow li {
+  text-align: left;
+}
+
+#shipping-resource-list-follow li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 125px;
+  top: 10px;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer DBA logos */
+.dba-logos {
+  position: relative;
+  top: 20px;
+  left: 400px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.dba-logos img {
+  width: 8%;
+  height: auto;
+  padding-left: 20px;
+  margin-top: -20px;
+}
+
+/**************************
+Media Queries & Breakpoints
+**************************/
+@media (max-width: 425px) {
+  .hideOnMobile {
+    display: none !important;
+  }
+  .cta {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .top {
+    padding-top: 40px;
+  }
+  .bottom {
+    padding-bottom: 40px;
+  }
+  .name,
+  .description {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
