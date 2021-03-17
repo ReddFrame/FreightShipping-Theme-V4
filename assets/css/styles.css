@@ -18,6 +18,11 @@ body {
   overflow-x: hidden;
 }
 
+.fa-headset {
+  color: red !important;
+  font-size: 30px !important;
+}
+
 /**************************
 Navigation Brand/Logo
 **************************/
@@ -69,17 +74,12 @@ Shipping Solutions - Content
   padding-bottom: 50px;
 }
 
-/**************************
-Shipping Solutions - Features
-**************************/
 .item h3 {
   font-family: Arial, sans-serif, sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: -1px;
   font-size: 17px;
   margin-top: 40px;
-  text-transform: uppercase;
 }
 
 .item p {
@@ -92,8 +92,35 @@ Shipping Solutions - Features
 /**************************
 One Step Logistics Services - Content
 **************************/
+.bottom .container-fluid {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .intro2 h2 {
   margin-top: -10px;
+}
+
+.name {
+  font-family: "Sarabun", sans-serif, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.description {
+  font-family: "Sarabun", sans-serif, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+}
+
+/**************************
+Why FreightCenter - Content
+**************************/
+.whyFC {
+  padding-bottom: 10px !important;
 }
 
 /**************************
@@ -204,6 +231,17 @@ Footer
 }
 
 /**************************
+Overrides
+**************************/
+.features-blue .intro {
+  max-width: 750px !important;
+}
+
+.ShippingSolutions {
+  max-width: 70% !important;
+}
+
+/**************************
 Media Queries & Breakpoints
 **************************/
 @media (max-width: 425px) {
@@ -214,6 +252,12 @@ Media Queries & Breakpoints
     text-align: center;
     padding-top: 10px;
   }
+  .cta h1 {
+    font-size: 20px;
+  }
+  .cta p {
+    font-size: 16px;
+  }
   .top {
     padding-top: 40px;
   }
@@ -223,6 +267,12 @@ Media Queries & Breakpoints
   .name,
   .description {
     text-align: center;
+  }
+  .intro h2 {
+    font-size: 30px;
+  }
+  .intro p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

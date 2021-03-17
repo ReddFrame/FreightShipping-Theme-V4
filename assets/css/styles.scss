@@ -43,6 +43,11 @@ body {
     overflow-x: hidden;
 }
 
+.fa-headset {
+    color: red !important;
+    font-size: 30px !important;
+}
+
 /**************************
 Navigation Brand/Logo
 **************************/
@@ -88,7 +93,7 @@ Shipping Solutions - Content
     letter-spacing: -2px;
     color: #343a40;
     margin-top: 100px;
-    line-height: 60px; 
+    line-height: 60px;
 }
 
 .intro p {
@@ -98,18 +103,12 @@ Shipping Solutions - Content
     padding-bottom: 50px;
 }
 
-/**************************
-Shipping Solutions - Features
-**************************/
-
 .item h3 {
     font-family: $secondary-font, sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: -1px;
     font-size: 17px;
     margin-top: 40px;
-    text-transform: uppercase;
 }
 
 .item p {
@@ -123,8 +122,36 @@ Shipping Solutions - Features
 One Step Logistics Services - Content
 **************************/
 
+.bottom .container-fluid {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .intro2 h2 {
     margin-top: -10px;
+}
+
+.name {
+    font-family: $primary-font, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.description {
+    font-family: $primary-font, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+}
+
+/**************************
+Why FreightCenter - Content
+**************************/
+
+.whyFC {
+    padding-bottom: 10px !important;
 }
 
 /**************************
@@ -236,6 +263,18 @@ Footer
 }
 
 /**************************
+Overrides
+**************************/
+
+.features-blue .intro {
+    max-width: 750px !important;
+}
+
+.ShippingSolutions {
+    max-width: 70% !important;
+}
+
+/**************************
 Media Queries & Breakpoints
 **************************/
 
@@ -253,6 +292,14 @@ Media Queries & Breakpoints
         padding-top: 10px;
     }
 
+    .cta h1 {
+        font-size: 20px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
     // Gives padding top to section in mobile resolution
     .top {
         padding-top: 40px;
@@ -267,6 +314,14 @@ Media Queries & Breakpoints
     .name,
     .description {
         text-align: center;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 16px;
     }
 }
 
