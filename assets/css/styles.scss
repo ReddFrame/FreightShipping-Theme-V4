@@ -82,6 +82,21 @@ Hero/Banner - Buttons
     background-color: #489be8;
 }
 
+.highlight-phone .container {
+    max-width: 100vw;
+}
+
+/**************************
+X - Graphic
+**************************/
+
+.xGraphic {
+    width: 500px;
+    height: 375px;
+    position: absolute;
+    left: 427px;
+}
+
 /**************************
 CTA - Content
 **************************/
@@ -160,6 +175,23 @@ Why FreightCenter - Content
 
 .whyFC {
     padding-bottom: 10px !important;
+}
+
+/**************************
+Overrides
+**************************/
+
+.features-blue .intro {
+    max-width: 750px !important;
+}
+
+.ShippingSolutions {
+    max-width: 70% !important;
+}
+
+.highlight-phone {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /**************************
@@ -271,18 +303,6 @@ Footer
 }
 
 /**************************
-Overrides
-**************************/
-
-.features-blue .intro {
-    max-width: 750px !important;
-}
-
-.ShippingSolutions {
-    max-width: 70% !important;
-}
-
-/**************************
 Media Queries & Breakpoints
 **************************/
 
@@ -290,7 +310,9 @@ Media Queries & Breakpoints
 @media (max-width: 425px) {
 
     // Hides banner/hero image in mobile resolution
-    .hideOnMobile {
+    .hideOnMobile,
+    // Hides X graphic image in mobile resolution
+    .xGraphic {
         display: none !important;
     }
 
@@ -330,6 +352,15 @@ Media Queries & Breakpoints
 
     .intro p {
         font-size: 16px;
+    }
+
+    .highlight-phone {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    // Removes padding on left and centers on mobile resolution
+    .mover {
+        padding-left: 0 !important;
     }
 }
 
