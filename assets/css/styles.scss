@@ -80,17 +80,21 @@ Hero/Banner - Buttons
 
 .hero-button1:hover {
     background-color: #ff6b0b;
-    ;
+    transition: 0.3s ease-in-out;
 }
 
 .hero-button2 {
-    background-color: #489be8;
+    background-color: transparent;
     border-radius: 0;
-    border: none;
+    border: 1px solid rgb(255, 107, 11);
+    color: rgb(52, 58, 64);
 }
 
 .hero-button2:hover {
-    background-color: #489be8;
+    background-color: #ff6b0b;
+    border: 1px solid rgb(255, 107, 11);
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 .highlight-phone .container {
@@ -102,10 +106,10 @@ X - Graphic
 **************************/
 
 .xGraphic {
-    width: 500px;
-    height: 375px;
+    width: auto;
+    height: 529px;
     position: absolute;
-    left: 427px;
+    left: 364px;
 }
 
 /**************************
@@ -203,10 +207,19 @@ Overrides
 .highlight-phone {
     padding-top: 0px;
     padding-bottom: 0px;
+    min-height: 78vh;
+}
+
+.highlight-phone .container .row {
+    height: 78vh;
 }
 
 .features-blue h2 {
     margin-bottom: 10px;
+}
+
+.features-blue .item .name {
+    margin-bottom: 5px;
 }
 
 /**************************
@@ -253,6 +266,7 @@ Footer
 /* Footer -- Shipping Resources */
 #footer-links h5 {
     color: $opacity-1;
+    font-family: Arial, sans-serif;
 }
 
 #shipping-resource-list li {
@@ -326,6 +340,7 @@ Media Queries & Breakpoints
 
     // Hides banner/hero image in mobile resolution
     .hideOnMobile,
+
     // Hides X graphic image in mobile resolution
     .xGraphic {
         display: none !important;
@@ -378,16 +393,44 @@ Media Queries & Breakpoints
     .mover {
         padding-left: 0 !important;
     }
+
+    // Removes 1px from letter spacing
+    .mover h1 {
+        letter-spacing: -1px !important;
+    }
+
+    // Halves the side of top margin spacing
+    .features-blue .container .intro h2 {
+        margin-top: 50px !important;
+    }
+
+    // Shrinks the spacing on the top
+    .bottom .container-fluid {
+        padding-top: inherit !important;
+    }
+
+    // Centers the copyright text on footer
+    .footer-copyright {
+        position: inherit;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (max-width: 768px) {
+
+    // Hides the X graphic in tablet resolution
+    .highlight-phone .container .row img {
+        display: none !important;
+    }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (max-width: 992px) {}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {}
+@media (max-width: 1400px) {}
