@@ -111,7 +111,7 @@ Shipping Solutions - Content
   font-family: "Sarabun", sans-serif, sans-serif;
   font-weight: 100;
   font-size: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .item h3 {
@@ -304,7 +304,9 @@ Footer
 Media Queries & Breakpoints
 **************************/
 @media (max-width: 425px) {
-  .hideOnMobile,
+  .hideOnMobile {
+    display: none !important;
+  }
   .xGraphic {
     display: none !important;
   }
@@ -355,11 +357,35 @@ Media Queries & Breakpoints
     margin: 0 auto;
     text-align: center;
   }
+  .intro2 p {
+    padding: 0px 40px;
+  }
+  .features p {
+    padding: 10px 40px !important;
+  }
+  .features2 p {
+    padding: 10px 10px !important;
+  }
 }
 
 @media (max-width: 768px) {
-  .highlight-phone .container .row img {
-    display: none !important;
+  .xGraphic {
+    height: 275px !important;
+    left: 217px !important;
+  }
+  .mover {
+    padding-left: 25px !important;
+  }
+  .mover h1 {
+    font-size: 25px !important;
+    letter-spacing: -2px !important;
+    line-height: 25px !important;
+  }
+  .highlight-phone {
+    min-height: inherit !important;
+  }
+  .highlight-phone .container .row {
+    height: inherit !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
