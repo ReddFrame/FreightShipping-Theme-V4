@@ -458,10 +458,49 @@ Media Queries & Breakpoints
 }
 
 // Large devices (desktops, 992px and up)
-@media (max-width: 992px) {}
+@media (max-width: 1024px) {
+    .xGraphic {
+        height: 462px !important;
+        left: 245px !important;    
+    }
+
+    .mover {
+        padding-left: 75px !important;
+    }
+
+    .highlight-phone .hideOnMobile img {
+        width: 176% !important;
+    }
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .xGraphic {
+        height: 461px !important;
+        left: 288px !important;    
+    }
+
+    .mover {
+        padding-left: 75px !important;
+    }
+
+    .highlight-phone .hideOnMobile img {
+        width: 149% !important;
+    }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .xGraphic {
+        height: 461px !important;
+        left: 344px !important;    
+    }
+
+    .mover {
+        padding-left: 75px !important;
+    }
+
+    .highlight-phone .hideOnMobile img {
+        width: 127% !important;
+    }
+}

@@ -388,4 +388,43 @@ Media Queries & Breakpoints
     height: inherit !important;
   }
 }
+
+@media (max-width: 1024px) {
+  .xGraphic {
+    height: 462px !important;
+    left: 245px !important;
+  }
+  .mover {
+    padding-left: 75px !important;
+  }
+  .highlight-phone .hideOnMobile img {
+    width: 176% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .xGraphic {
+    height: 461px !important;
+    left: 288px !important;
+  }
+  .mover {
+    padding-left: 75px !important;
+  }
+  .highlight-phone .hideOnMobile img {
+    width: 149% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .xGraphic {
+    height: 461px !important;
+    left: 344px !important;
+  }
+  .mover {
+    padding-left: 75px !important;
+  }
+  .highlight-phone .hideOnMobile img {
+    width: 127% !important;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
