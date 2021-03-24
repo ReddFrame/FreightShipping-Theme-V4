@@ -18,16 +18,11 @@ body {
   overflow-x: hidden;
 }
 
-.fa-headset {
-  color: red !important;
-  font-size: 30px !important;
-}
-
 h1,
 h2,
 h3,
 h4 {
-  color: #343a40 !important;
+  color: #343a40;
 }
 
 /**************************
@@ -68,7 +63,7 @@ Hero/Banner - Buttons
 .hero-button2:hover {
   background-color: #ff6b0b;
   border: 1px solid #ff6b0b;
-  color: #fff;
+  color: white;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -82,9 +77,9 @@ X - Graphic
 **************************/
 .xGraphic {
   width: auto;
-  height: 529px;
+  height: 531px;
   position: absolute;
-  left: 364px;
+  left: 340px;
 }
 
 /**************************
@@ -304,6 +299,19 @@ Footer
 Media Queries & Breakpoints
 **************************/
 @media (max-width: 425px) {
+  .highlight-phone {
+    background-image: url("../img/Header-Images-edited-mob.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: 64vh !important;
+  }
+  .highlight-phone .container .row {
+    height: 47vh !important;
+  }
+  .hero-button2 {
+    color: white;
+  }
   .hideOnMobile {
     display: none !important;
   }
@@ -340,11 +348,17 @@ Media Queries & Breakpoints
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .mover h1 {
+    color: white !important;
+    font-size: 32px !important;
+    letter-spacing: -2px !important;
+    line-height: 37px !important;
+  }
+  .ctaContainer a {
+    font-size: 20px !important;
+  }
   .mover {
     padding-left: 0 !important;
-  }
-  .mover h1 {
-    letter-spacing: -1px !important;
   }
   .features-blue .container .intro h2 {
     margin-top: 50px !important;
@@ -366,6 +380,21 @@ Media Queries & Breakpoints
   .features2 p {
     padding: 10px 10px !important;
   }
+  #shipping-resource-list-fc li a,
+  #shipping-resource-list-follow li a {
+    left: 82px !important;
+    top: 10px !important;
+  }
+  .logo-footer,
+  #footer-links h5 {
+    margin-left: 81px !important;
+  }
+  hr:not([size]) {
+    background-color: transparent !important;
+  }
+  .pb-3 {
+    padding-bottom: 5rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -374,18 +403,18 @@ Media Queries & Breakpoints
     left: 217px !important;
   }
   .mover {
-    padding-left: 25px !important;
+    padding-left: 25px;
   }
   .mover h1 {
-    font-size: 25px !important;
-    letter-spacing: -2px !important;
-    line-height: 25px !important;
+    font-size: 25px;
+    letter-spacing: -2px;
+    line-height: 25px;
   }
   .highlight-phone {
-    min-height: inherit !important;
+    min-height: inherit;
   }
   .highlight-phone .container .row {
-    height: inherit !important;
+    height: inherit;
   }
 }
 
@@ -395,7 +424,7 @@ Media Queries & Breakpoints
     left: 245px !important;
   }
   .mover {
-    padding-left: 75px !important;
+    padding-left: 75px;
   }
   .highlight-phone .hideOnMobile img {
     width: 176% !important;
@@ -408,7 +437,7 @@ Media Queries & Breakpoints
     left: 288px !important;
   }
   .mover {
-    padding-left: 75px !important;
+    padding-left: 75px;
   }
   .highlight-phone .hideOnMobile img {
     width: 149% !important;
@@ -421,7 +450,7 @@ Media Queries & Breakpoints
     left: 344px !important;
   }
   .mover {
-    padding-left: 75px !important;
+    padding-left: 75px;
   }
   .highlight-phone .hideOnMobile img {
     width: 127% !important;

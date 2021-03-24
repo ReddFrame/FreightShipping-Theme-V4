@@ -25,6 +25,8 @@ $opacity-1: rgba(255, 255, 255, 0.39);
 $opacity-2: rgba(0, 0, 0, 0.5);
 $shadow-1: 5px 2px 5px rgba(0, 0, 0, 0.1);
 $rgba-1: rgba(52, 58, 64, 0.75);
+$rgb-1: rgb(52, 58, 64);
+$box-shadow-1: 0px 1px 20px grey;
 
 /**************************
 Global Reset
@@ -43,16 +45,11 @@ body {
     overflow-x: hidden;
 }
 
-.fa-headset {
-    color: red !important;
-    font-size: 30px !important;
-}
-
 h1,
 h2,
 h3,
 h4 {
-    color: rgb(52, 58, 64) !important;
+    color: $rgb-1;
 }
 
 /**************************
@@ -60,7 +57,7 @@ Navigation Brand/Logo
 **************************/
 
 .navbar {
-    box-shadow: 0px 1px 20px grey;
+    box-shadow: $box-shadow-1;
 }
 
 .navbar-brand img {
@@ -73,27 +70,27 @@ Hero/Banner - Buttons
 **************************/
 
 .hero-button1 {
-    background-color: #ff6b0b;
+    background-color: $primary-color;
     border-radius: 0;
     border: none;
 }
 
 .hero-button1:hover {
-    background-color: #ff6b0b;
+    background-color: $primary-color;
     transition: 0.3s ease-in-out;
 }
 
 .hero-button2 {
     background-color: transparent;
     border-radius: 0;
-    border: 1px solid rgb(255, 107, 11);
+    border: 1px solid $primary-color;
     color: rgb(52, 58, 64);
 }
 
 .hero-button2:hover {
-    background-color: #ff6b0b;
-    border: 1px solid rgb(255, 107, 11);
-    color: #fff;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: $alt-color-4;
     transition: 0.3s ease-in-out;
 }
 
@@ -107,9 +104,9 @@ X - Graphic
 
 .xGraphic {
     width: auto;
-    height: 529px;
+    height: 531px;
     position: absolute;
-    left: 364px;
+    left: 340px;
 }
 
 /**************************
@@ -266,7 +263,7 @@ Footer
 /* Footer -- Shipping Resources */
 #footer-links h5 {
     color: $opacity-1;
-    font-family: Arial, sans-serif;
+    font-family: $secondary-font;
 }
 
 #shipping-resource-list li {
@@ -338,6 +335,23 @@ Media Queries & Breakpoints
 // Small devices (landscape phones, 425px and up)
 @media (max-width: 425px) {
 
+    // Changes banner image in mobile resolution
+    .highlight-phone {
+        background-image: url("../img/Header-Images-edited-mob.jpg") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        min-height: 64vh !important;
+    }
+
+    .highlight-phone .container .row {
+        height: 47vh !important;
+    }
+
+    .hero-button2 {
+        color: $alt-color-4;
+    }
+
     // Hides banner/hero image in mobile resolution
     .hideOnMobile {
         display: none !important;
@@ -391,14 +405,20 @@ Media Queries & Breakpoints
         padding-bottom: 50px;
     }
 
+    .mover h1 {
+        color: $alt-color-4 !important;
+        font-size: 32px !important;
+        letter-spacing: -2px !important;
+        line-height: 37px !important;
+    }
+
+    .ctaContainer a {
+        font-size: 20px !important;
+    }
+
     // Removes padding on left and centers on mobile resolution
     .mover {
         padding-left: 0 !important;
-    }
-
-    // Removes 1px from letter spacing
-    .mover h1 {
-        letter-spacing: -1px !important;
     }
 
     // Halves the side of top margin spacing
@@ -429,6 +449,26 @@ Media Queries & Breakpoints
     .features2 p {
         padding: 10px 10px !important;
     }
+
+    #shipping-resource-list-fc li a,
+    #shipping-resource-list-follow li a {
+        left: 82px !important;
+        top: 10px !important;
+    }
+
+
+    .logo-footer,
+    #footer-links h5 {
+        margin-left: 81px !important;
+    }
+
+    hr:not([size]) {
+        background-color: transparent !important;
+    }
+
+    .pb-3 {
+        padding-bottom: 5rem !important;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -439,21 +479,21 @@ Media Queries & Breakpoints
     }
 
     .mover {
-        padding-left: 25px !important;
+        padding-left: 25px;
     }
 
     .mover h1 {
-        font-size: 25px !important;
-        letter-spacing: -2px !important;
-        line-height: 25px !important;
+        font-size: 25px;
+        letter-spacing: -2px;
+        line-height: 25px;
     }
 
     .highlight-phone {
-        min-height: inherit !important;
+        min-height: inherit;
     }
 
     .highlight-phone .container .row {
-        height: inherit !important;
+        height: inherit;
     }
 }
 
@@ -461,11 +501,11 @@ Media Queries & Breakpoints
 @media (max-width: 1024px) {
     .xGraphic {
         height: 462px !important;
-        left: 245px !important;    
+        left: 245px !important;
     }
 
     .mover {
-        padding-left: 75px !important;
+        padding-left: 75px;
     }
 
     .highlight-phone .hideOnMobile img {
@@ -477,11 +517,11 @@ Media Queries & Breakpoints
 @media (max-width: 1200px) {
     .xGraphic {
         height: 461px !important;
-        left: 288px !important;    
+        left: 288px !important;
     }
 
     .mover {
-        padding-left: 75px !important;
+        padding-left: 75px;
     }
 
     .highlight-phone .hideOnMobile img {
@@ -493,11 +533,11 @@ Media Queries & Breakpoints
 @media (max-width: 1400px) {
     .xGraphic {
         height: 461px !important;
-        left: 344px !important;    
+        left: 344px !important;
     }
 
     .mover {
-        padding-left: 75px !important;
+        padding-left: 75px;
     }
 
     .highlight-phone .hideOnMobile img {
